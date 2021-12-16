@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		138DE32C276A3512004E0499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DE32B276A3512004E0499 /* AppDelegate.swift */; };
 		138DE32E276A3512004E0499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DE32D276A3512004E0499 /* SceneDelegate.swift */; };
-		138DE330276A3512004E0499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DE32F276A3512004E0499 /* ViewController.swift */; };
+		138DE330276A3512004E0499 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DE32F276A3512004E0499 /* ReminderListViewController.swift */; };
 		138DE333276A3512004E0499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138DE331276A3512004E0499 /* Main.storyboard */; };
 		138DE335276A3514004E0499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138DE334276A3514004E0499 /* Assets.xcassets */; };
 		138DE338276A3514004E0499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138DE336276A3514004E0499 /* LaunchScreen.storyboard */; };
+		138DE340276A3616004E0499 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DE33F276A3616004E0499 /* Reminder.swift */; };
+		138DE342276A3DDD004E0499 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DE341276A3DDD004E0499 /* ReminderListCell.swift */; };
+		138DE348276AE563004E0499 /* ReminderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DE347276AE563004E0499 /* ReminderDetailViewController.swift */; };
+		138DE34A276B8288004E0499 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 138DE349276B8288004E0499 /* ReadMe.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		138DE328276A3512004E0499 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138DE32B276A3512004E0499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138DE32D276A3512004E0499 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		138DE32F276A3512004E0499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		138DE32F276A3512004E0499 /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
 		138DE332276A3512004E0499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		138DE334276A3514004E0499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		138DE337276A3514004E0499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		138DE339276A3514004E0499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		138DE33F276A3616004E0499 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		138DE341276A3DDD004E0499 /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
+		138DE347276AE563004E0499 /* ReminderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewController.swift; sourceTree = "<group>"; };
+		138DE349276B8288004E0499 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		138DE31F276A3512004E0499 = {
 			isa = PBXGroup;
 			children = (
+				138DE349276B8288004E0499 /* ReadMe.md */,
 				138DE32A276A3512004E0499 /* Today */,
 				138DE329276A3512004E0499 /* Products */,
 			);
@@ -58,9 +67,12 @@
 			children = (
 				138DE32B276A3512004E0499 /* AppDelegate.swift */,
 				138DE32D276A3512004E0499 /* SceneDelegate.swift */,
-				138DE32F276A3512004E0499 /* ViewController.swift */,
 				138DE331276A3512004E0499 /* Main.storyboard */,
+				138DE32F276A3512004E0499 /* ReminderListViewController.swift */,
+				138DE347276AE563004E0499 /* ReminderDetailViewController.swift */,
+				138DE341276A3DDD004E0499 /* ReminderListCell.swift */,
 				138DE334276A3514004E0499 /* Assets.xcassets */,
+				138DE33F276A3616004E0499 /* Reminder.swift */,
 				138DE336276A3514004E0499 /* LaunchScreen.storyboard */,
 				138DE339276A3514004E0499 /* Info.plist */,
 			);
@@ -127,6 +139,7 @@
 			files = (
 				138DE338276A3514004E0499 /* LaunchScreen.storyboard in Resources */,
 				138DE335276A3514004E0499 /* Assets.xcassets in Resources */,
+				138DE34A276B8288004E0499 /* ReadMe.md in Resources */,
 				138DE333276A3512004E0499 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				138DE330276A3512004E0499 /* ViewController.swift in Sources */,
+				138DE330276A3512004E0499 /* ReminderListViewController.swift in Sources */,
+				138DE342276A3DDD004E0499 /* ReminderListCell.swift in Sources */,
 				138DE32C276A3512004E0499 /* AppDelegate.swift in Sources */,
+				138DE348276AE563004E0499 /* ReminderDetailViewController.swift in Sources */,
 				138DE32E276A3512004E0499 /* SceneDelegate.swift in Sources */,
+				138DE340276A3616004E0499 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
